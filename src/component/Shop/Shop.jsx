@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
@@ -11,11 +12,12 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
   return (
     <section className="shops-container">
       <div className="products">
-        <h2>new products: {products.length}</h2>
+        {products.map((product) => (
+          <Product key={product.id} product={product}></Product>
+        ))}
       </div>
       <div className="order-summary">
         <h4>Order Summary</h4>
