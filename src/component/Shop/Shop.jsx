@@ -12,15 +12,26 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  const [cart, setCart] = useState([]);
+  // product btn section
+  const btnClick = (product) => {
+    let newCart = [...cart, product];
+    setCart(newCart);
+  };
   return (
     <section className="shops-container">
       <div className="products">
         {products.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product
+            key={product.id}
+            product={product}
+            btnClick={btnClick}
+          ></Product>
         ))}
       </div>
       <div className="order-summary">
         <h4>Order Summary</h4>
+        <p>Selected Items: {cart.length}</p>
       </div>
     </section>
   );
