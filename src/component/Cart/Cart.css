@@ -1,0 +1,57 @@
+.cart {
+  background: rgba(255, 153, 0, 0.3);
+  padding: 50px 25px;
+}
+.cart-title {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.para {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2a414f;
+  margin-bottom: 15px;
+}
+.grand {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  color: #0e161a;
+  margin: 20px 0;
+}
+.cart-btn {
+  background: #ff3030;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.review-btn {
+  background: #ff9900;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 14px;
+  cursor: pointer;
+  width: 100%;
+}
